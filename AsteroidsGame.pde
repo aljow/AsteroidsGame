@@ -27,7 +27,7 @@ public void keyPressed() {
     bob.turn(-15);
   }
   if (key == 'x') {
-    bob.accelerate(0.9);
+    bob.accelerate(1);
   }
   if (keyCode == ENTER) {
     bob.hyperspace();
