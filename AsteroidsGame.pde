@@ -1,4 +1,4 @@
-public float distance;
+float distance;
 Spaceship bob = new Spaceship(); 
 Star [] sue = new Star[100];
 ArrayList <Asteroid> tom = new ArrayList <Asteroid>();
