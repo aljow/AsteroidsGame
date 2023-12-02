@@ -1,4 +1,4 @@
-float distance;
+public float distance;
 Spaceship bob = new Spaceship(); 
 Star [] sue = new Star[100];
 ArrayList <Asteroid> tom = new ArrayList <Asteroid>();
@@ -8,7 +8,7 @@ public void setup() {
   for(int i = 0; i < sue.length; i++) {
     sue[i] = new Star();
   }
-  for(int j =0; j < 2; j++) {
+  for(int j =0; j < 7; j++) {
     tom.add(new Asteroid());
   }
 }
