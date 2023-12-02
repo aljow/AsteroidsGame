@@ -1,6 +1,6 @@
 class Asteroid extends Floater {
-  private int speedRot;
-  public Asteroid () {
+    private int speedRot;
+    public Asteroid () {
     corners = 6;
     xCorners = new int [] {-12,-12,4,12,2,-16};
     yCorners = new int [] {2,12,20,2,-12,-8};
