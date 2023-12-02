@@ -23,5 +23,7 @@ class Asteroid extends Floater {
     }
     super.move();
     turn(speedRot);
+    System.out.println(myXspeed);
+    System.out.println(speedRot);
   }
 }
