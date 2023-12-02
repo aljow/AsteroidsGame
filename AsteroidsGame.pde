@@ -1,4 +1,5 @@
-float distance;
+public float shipDist;
+public float astDist;
 Spaceship bob = new Spaceship(); 
 Star [] sue = new Star[100];
 ArrayList <Asteroid> tom = new ArrayList <Asteroid>();
@@ -8,7 +9,7 @@ public void setup() {
   for(int i = 0; i < sue.length; i++) {
     sue[i] = new Star();
   }
-  for(int j =0; j < 7; j++) {
+  for(int j =0; j < 5; j++) {
     tom.add(new Asteroid());
   }
 }
@@ -21,8 +22,9 @@ public void draw() {
   for(int j = 0; j < tom.size(); j++) {
     tom.get(j).show();
     tom.get(j).move();
-    distance = dist((float)bob.getX(),(float)bob.getY(),(float)tom.get(j).getX(),(float)tom.get(j).getY());
-    if (distance < 6) {
+    shipDist = dist((float)bob.getX(),(float)bob.getY(),(float)tom.get(j).getX(),(float)tom.get(j).getY());
+    astDist = dist((float)tom.get(j).getX(),(float)tom.get(j).getY(),(float)bob.getX(),(float)bob.getY());
+    if (shipDist < 9 || astDist < 9) {
       tom.remove(j);
       }
   }
